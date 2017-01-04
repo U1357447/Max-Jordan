@@ -1,4 +1,5 @@
-#This is a new branch with an edi applied
+#This is a new branch with an edit applied
+#This is another edit on the newbranch
 
 # Laravel PHP Framework
 
