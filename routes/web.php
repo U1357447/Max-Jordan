@@ -11,16 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
-Route::get('about', function(){
+Route::get('/', 'PagesController@home');
+Route::get('about', 'PagesController@about');
+Route::get('login', 'PagesController@login');
 
-  $people = ['Max', 'Jordan', 'Test'];
-  return view('pages.about', compact('people'));
-});
-
-Route::get('login', function(){
-  return view('pages.login');
-});
+Route::get('cards', 'CardsController@index');
+Route::get('cards/{card}', 'CardsController@show');
